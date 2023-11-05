@@ -22,10 +22,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: npm ci
-      - run: npm test:unit
-      - run: npm format
-      - run: npm dev
+      - run: yarn install --frozen-lockfile
+      - run: yarn test:unit
+      - run: yarn format
+      - run: yarn dev
 
 # jobs:
 #   Explore-GitHub-Actions:
