@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: 18
       - run: yarn install --frozen-lockfile
-      - run: yarn test:unit
+      - run: yarn run test:unit
       - run: yarn format
       - run: yarn dev
 
