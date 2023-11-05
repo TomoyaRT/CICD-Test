@@ -17,16 +17,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          path: main
+          path: master
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: 18
       - run: yarn 
-      - run: yarn build
-      - run: yarn test:unit
       - run: yarn format
-      - run: yarn dev
+      - run: yarn test:unit
+      - run: yarn build
+
 
 # jobs:
 #   Explore-GitHub-Actions:
